@@ -6,42 +6,6 @@ double b = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введи c = ");
 double c = Convert.ToDouble(Console.ReadLine());
 
-
-Console.Write("n = ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("a = ");
-double a = Convert.ToDouble(Console.ReadLine());
-Console.Write("b = ");
-double b = Convert.ToDouble(Console.ReadLine());
-
-int k = n % 6;
-
-double y = 0;
-
-switch (k)
-{
-    case 0:
-        y = 1;
-        break;
-    case 1:
-        y = a + b;        
-        break;
-    case 2:
-    case 3:
-        y = a * a + b * b;         
-        break;
-    case 4:
-        y = a * Math.Sin(b);
-        break;
-    case 5:
-        y = a * Math.Log((Math.Abs(b)));
-        break;
-}
-Console.WriteLine($"y = {y}");
-
-
-
-
 //проверка условия
 if (a < b && a < c && b < c)
 {
